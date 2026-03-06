@@ -9,8 +9,8 @@ setup(
     packages=find_packages(),
     author="Abhishek Srivatsasa Guntur",
     author_email="gabhisheksrivatsasa@gmail.com",
-    description="A simple janitorial tool for cleaning up your workspace",
+    description="A simple janitorial tool for cleaning up your workspace
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Abhishek-Srivatsasa/SiftOutProject",
+    url="https://github.com/Abhishek-Srivatsasa/SiftOut",
 )

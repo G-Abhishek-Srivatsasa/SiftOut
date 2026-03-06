@@ -74,7 +74,7 @@ class Janitor:
             updated_lines = []
             file_changed = False
 
-            with open(file_path, "r") as f:
+            with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
                 lines = f.readlines()
 
             for lin_num, line in enumerate(lines, 1):

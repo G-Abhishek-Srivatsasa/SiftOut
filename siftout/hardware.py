@@ -100,7 +100,7 @@ class Janitor:
                 if "import os" not in updated_lines[0]:
                     updated_lines.insert(0, "import os\n")
 
-                with open(file_path, "w") as f:
+                with open(file_path, "w", encoding="utf-8") as f:
                     f.writelines(updated_lines)
 
         if env_entries:
@@ -111,13 +111,13 @@ class Janitor:
         existing = {}
 
         if os.path.exists(".env"):
-            with open(".env", "r") as f:
+            with open(".env", "r", encoding="utf-8") as f:
                 for line in f:
                     if "=" in line:
                         k, v = line.strip().split("=", 1)
                         existing[k] = v
 
-        with open(".env", "a") as f:
+        with open(".env", "a", encoding="utf-8") as f:
             for k, v in env_entries.items():
                 if k not in existing:
                     f.write(f"{k}={v}\n")
@@ -129,10 +129,10 @@ class Janitor:
 
         already_ignored = False
         if mode == "a":
-            with open(".gitignore", "r") as f:
+            with open(".gitignore", "r", encoding="utf-8") as f:
                 already_ignored = file_name in f.read()
 
         if not already_ignored:
-            with open(".gitignore", mode) as f:
+            with open(".gitignore", mode, encoding="utf-8") as f:
                 f.write(f"\n{file_name}\n")
                 logger.info(f"[Siftout] added {file_name} to .gitignore")

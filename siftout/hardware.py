@@ -48,11 +48,11 @@ class Janitor:
                         thing
                     )  # This section removes the folders which can be moved to the trash bin
                     folders_cleaned += 1
-                    logger.info("[Flux] removed %s folder", thing)
+                    logger.info("[siftout] removed %s folder", thing)
                 elif os.path.isfile(thing):  # Checks if it's a file
                     os.remove(thing)
                     files_cleaned += 1
-                    logger.info("[Flux] removed %s file", thing)
+                    logger.info("[siftout] removed %s file", thing)
             except OSError as e:
                 logger.error("Error removing %s: %s", thing, e)
         return {"files": files_cleaned, "folders": folders_cleaned}
@@ -135,4 +135,4 @@ class Janitor:
         if not already_ignored:
             with open(".gitignore", mode, encoding="utf-8") as f:
                 f.write(f"\n{file_name}\n")
-                logger.info(f"[Flux] added {file_name} to .gitignore")
+                logger.info(f"[siftout] added {file_name} to .gitignore")

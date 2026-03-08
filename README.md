@@ -339,4 +339,5 @@ SIFTOUT/
 
 ## License
 
-[MIT](LICENSE) © 2024-2025 Abhishek Srivatsasa Guntur & Devansh Singh
+[MIT](LICENSE) © 2026 Abhishek Srivatsasa Guntur & Devansh Singh
+

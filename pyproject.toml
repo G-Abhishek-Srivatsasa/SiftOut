@@ -7,7 +7,7 @@ build-backend = "setuptools.backends.legacy:build"
 # ─────────────────────────────────────────────────────────────────────────────
 [project]
 name            = "siftout"
-version         = "1.0.0"
+version         = "1.1.0"
 description     = "Smart, automated workspace cleaner and security hardener for Python projects."
 readme          = "README.md"
 license         = { text = "MIT" }

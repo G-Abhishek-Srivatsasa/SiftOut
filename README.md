@@ -5,7 +5,7 @@
 
 <!-- Logo -->
 <p align="center">
-  <img src="https://chronomap-logo.netlify.app/logo.png" alt="ChronoMap" width="180">
+  <img src="https://siftout-logo.vercel.app/" alt="SiftOut" width="180">
 </p>
 
 Once you image is online on a webpage, add this type of line on your readme.md's first line

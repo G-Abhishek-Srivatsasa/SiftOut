@@ -1,13 +1,13 @@
 [build-system]
 requires = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.backends.legacy:build"
+build-backend = "setuptools.build_meta"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Project metadata
 # ─────────────────────────────────────────────────────────────────────────────
 [project]
 name            = "siftout"
-version         = "1.1.0"
+version         = "1.2.0"
 description     = "Smart, automated workspace cleaner and security hardener for Python projects."
 readme          = "README.md"
 license         = { text = "MIT" }
